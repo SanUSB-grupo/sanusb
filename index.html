@@ -18,7 +18,7 @@
       <h2 class="hide">Menu</h2>
       <ul>
         <li><a href="#overview">Hardware</a></li>
-        <li><a href="#libraries">Bibliotecas</a></li>
+        <li><a href="#libraries">Desenvolva</a></li>
         <li><a href="#learn">Aprenda</a></li>
         <li><a href="#research">Trabalhos Publicados</a></li>
       </ul>
@@ -26,236 +26,124 @@
 
   <main id="content">
     <section id="first-impression">
-      <h2><span>San</span>USB</h2>
-      <p>Uma frase de efeito</p>
+        <div class="container-center">
+        <h2><span>San</span>USB</h2>
+        <p>“Aprenda a programar microcontroladores PIC utilizando a interface USB”</p>
+      </div>
     </section>
 
     <section id="overview">
       <div class="container-center">
-        <h2>Placa SanUSB</h2>
+        <h2>Placa microcontrolada SanUSB</h2>
         <p><span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span></p>
-        <img src="assets/img/SanUSB.svg" />
+
         <h3 class="hide">Especificações técnicas</h3>
+        <img src="assets/img/SanUSB.svg" />
       </div>
-      Pinout https://www.asus.com/uk/Single-Board-Computer/Tinker-Board/<table cellspacing="0" cellpadding="0" border="0" width="100%">
-      <tbody><tr>
-        <td class="text_green">GPIO.Setmode<br>
-        (GPIO.ASUS)</td>
-        <td class="text_blue">GPIO.Setmode<br>
-        (GPIO.BOARD)</td>
-        <td>Pinout</td>
-        <td style="width:90px">Physical Pin<br>
-        Number</td>
-        <td>Pinout</td>
-        <td class="text_blue">GPIO.Setmode<br>
-        (GPIO.BOARD)</td>
-        <td class="text_green">GPIO.Setmode<br>
-        (GPIO.ASUS)</td>
-      </tr>
-      <tr>
-        <td class="text_green"> </td>
-        <td class="text_blue">1</td>
-        <td>VCC3.3V_IO<br></td>
-        <td><span class="pin_left pin_y">1</span><span class="pin_right pin_r">2</span></td>
-        <td>VCC5V_SYS<br></td>
-        <td class="text_blue">2</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">252</td>
-        <td class="text_blue">3</td>
-        <td>GP8A4_I2C1_SDA<br></td>
-        <td><span class="pin_left">3</span><span class="pin_right pin_r">4</span></td>
-        <td>VCC5V_SYS<br></td>
-        <td class="text_blue">4</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">253</td>
-        <td class="text_blue">5</td>
-        <td>GP8A5_I2C1_SCL<br></td>
-        <td><span class="pin_left">5</span><span class="pin_right pin_black">6</span></td>
-        <td>GND<br></td>
-        <td class="text_blue">6</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">17</td>
-        <td class="text_blue">7</td>
-        <td>GP0C1_CLKOUT<br></td>
-        <td><span class="pin_left">7</span><span class="pin_right">8</span></td>
-        <td>GP5B1_UART1TX<br></td>
-        <td class="text_blue">8</td>
-        <td class="text_green">161</td>
-      </tr>
-      <tr>
-        <td class="text_green"> </td>
-        <td class="text_blue">9</td>
-        <td>GND<br></td>
-        <td><span class="pin_left pin_black">9</span><span class="pin_right">10</span></td>
-        <td>GP5B0_UART1RX<br></td>
-        <td class="text_blue">10</td>
-        <td class="text_green">160</td>
-      </tr>
-      <tr>
-        <td class="text_green">164</td>
-        <td class="text_blue">11</td>
-        <td>GP5B4_SPI0CLK_UART4CTSN<br></td>
-        <td><span class="pin_left">11</span><span class="pin_right">12</span></td>
-        <td>GP6A0_PCM/I2S_CLK<br></td>
-        <td class="text_blue">12</td>
-        <td class="text_green">184</td>
-      </tr>
-      <tr>
-        <td class="text_green">166</td>
-        <td class="text_blue">13</td>
-        <td>GP5B6_SPI0_TXD_UART4TX<br></td>
-        <td><span class="pin_left">13</span><span class="pin_right pin_black">14</span></td>
-        <td>GND<br></td>
-        <td class="text_blue">14</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">167</td>
-        <td class="text_blue">15</td>
-        <td>GP5B7_SPI0_RXD_UART4RX<br></td>
-        <td><span class="pin_left">15</span><span class="pin_right">16</span></td>
-        <td>GP5B2_UART1CTSN<br></td>
-        <td class="text_blue">16</td>
-        <td class="text_green">162</td>
-      </tr>
-      <tr>
-        <td class="text_green"> </td>
-        <td class="text_blue">17</td>
-        <td>VCC33_IO<br></td>
-        <td><span class="pin_left pin_y">17</span><span class="pin_right">18</span></td>
-        <td>GP5B3_UART1RTSN<br></td>
-        <td class="text_blue">18</td>
-        <td class="text_green">163</td>
-      </tr>
-      <tr>
-        <td class="text_green">257</td>
-        <td class="text_blue">19</td>
-        <td>GP8B1_SPI2TXD<br></td>
-        <td><span class="pin_left">19</span><span class="pin_right pin_black">20</span></td>
-        <td>GND<br></td>
-        <td class="text_blue">20</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">256</td>
-        <td class="text_blue">21</td>
-        <td>GP8B0_SPI2RXD<br></td>
-        <td><span class="pin_left">21</span><span class="pin_right">22</span></td>
-        <td>GP5C3<br></td>
-        <td class="text_blue">22</td>
-        <td class="text_green">171</td>
-      </tr>
-      <tr>
-        <td class="text_green">254</td>
-        <td class="text_blue">23</td>
-        <td>GP8A6_SPI2CLK<br></td>
-        <td><span class="pin_left">23</span><span class="pin_right">24</span></td>
-        <td>GP8A7_SPI2CSN0<br></td>
-        <td class="text_blue">24</td>
-        <td class="text_green">255</td>
-      </tr>
-      <tr>
-        <td class="text_green"> </td>
-        <td class="text_blue">25</td>
-        <td>GND<br></td>
-        <td><span class="pin_left pin_black">25</span><span class="pin_right">26</span></td>
-        <td>GP8A3_SPI2CSN1<br></td>
-        <td class="text_blue">26</td>
-        <td class="text_green">251</td>
-      </tr>
-      <tr>
-        <td class="text_green">233</td>
-        <td class="text_blue">27</td>
-        <td>GP7C1_I2C4_SDA<br></td>
-        <td><span class="pin_left pin_blue">27</span><span class="pin_right pin_blue">28</span></td>
-        <td>GP7C2_I2C4_SCL<br></td>
-        <td class="text_blue">28</td>
-        <td class="text_green">234</td>
-      </tr>
-      <tr>
-        <td class="text_green">165</td>
-        <td class="text_blue">29</td>
-        <td>GP5B5_SPI0CSN0_UART4RTSN<br></td>
-        <td><span class="pin_left">29</span><span class="pin_right pin_black">30</span></td>
-        <td>GND<br></td>
-        <td class="text_blue">30</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">168</td>
-        <td class="text_blue">31</td>
-        <td>GP5C0_SPI0CSN1<br></td>
-        <td><span class="pin_left">31</span><span class="pin_right">32</span></td>
-        <td>GP7C7_UART2TX_PWM3<br></td>
-        <td class="text_blue">32</td>
-        <td class="text_green">239</td>
-      </tr>
-      <tr>
-        <td class="text_green">238</td>
-        <td class="text_blue">33</td>
-        <td>GP7C6_UART2RX_PWM2<br></td>
-        <td><span class="pin_left">33</span><span class="pin_right pin_black">34</span></td>
-        <td>GND<br></td>
-        <td class="text_blue">34</td>
-        <td class="text_green"> </td>
-      </tr>
-      <tr>
-        <td class="text_green">185</td>
-        <td class="text_blue">35</td>
-        <td>GP6A1_PCM/I2S_FS<br></td>
-        <td><span class="pin_left">35</span><span class="pin_right">36</span></td>
-        <td>GP7A7_UART3RX<br></td>
-        <td class="text_blue">36</td>
-        <td class="text_green">223</td>
-      </tr>
-      <tr>
-        <td class="text_green">224</td>
-        <td class="text_blue">37</td>
-        <td>GP7B0_UART3TX<br></td>
-        <td><span class="pin_left">37</span><span class="pin_right">38</span></td>
-        <td>GP6A3_PCM/I2S_SDI<br></td>
-        <td class="text_blue">38</td>
-        <td class="text_green">187</td>
-      </tr>
-      <tr>
-        <td class="text_green"> </td>
-        <td class="text_blue">39</td>
-        <td>GND</td>
-        <td><span class="pin_left pin_black">39</span><span class="pin_right">40</span></td>
-        <td>GP6A4_PCM/I2S_SDO</td>
-        <td class="text_blue">40</td>
-        <td class="text_green">188</td>
-      </tr>
-    </tbody></table>
+      <h3>Pinout</h3>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tbody><tr>
+              <td>Pinout</td>
+              <td>Physical Pin<br>
+              Number</td>
+              <td>Pinout</td>
+            </tr>
+            <tr>
+              <td>pin_a0</td>
+              <td><span class="pin_left pin_y">1</span><span class="pin_right">2</span></td>
+              <td>pin_b7</td>
+            </tr>
+            <tr>
+              <td>pin_a1</td>
+              <td><span class="pin_left">3</span><span class="pin_right">4</span></td>
+              <td>pin_b6</td>
+            </tr>
+            <tr>
+              <td>pin_a2</td>
+              <td><span class="pin_left">5</span><span class="pin_right">6</span></td>
+              <td>pin_b5</td>
+            </tr>
+            <tr>
+              <td>pin_a3</td>
+              <td><span class="pin_left">7</span><span class="pin_right">8</span></td>
+              <td>pin_b4</td>
+            </tr>
+            <tr>
+              <td>pin_a4</td>
+              <td><span class="pin_left">9</span><span class="pin_right">10</span></td>
+              <td>pin_b3</td>
+            </tr>
+            <tr>
+              <td>pin_a5</td>
+              <td><span class="pin_left">11</span><span class="pin_right">12</span></td>
+              <td>pin_b2</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="pin_left pin_none"></span><span class="pin_right">14</span></td>
+              <td>pin_b1</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="pin_left pin_none"></span><span class="pin_right">16</span></td>
+              <td>pin_b0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="pin_left pin_none"></span><span class="pin_right pin_red">18</span></td>
+              <td>VCC +5v</td>
+            </tr>
+            <tr>
+              <td>pin_c0</td>
+              <td><span class="pin_left">19</span><span class="pin_right pin_black">20</span></td>
+              <td>GND</td>
+            </tr>
+            <tr>
+              <td>pin_c1</td>
+              <td><span class="pin_left">21</span><span class="pin_right">22</span></td>
+              <td>TX</td>
+            </tr>
+            <tr>
+              <td>pin_c2</td>
+              <td><span class="pin_left">23</span><span class="pin_right">24</span></td>
+              <td>RX</td>
+            </tr>
+          </tbody></table>
     </section>
 
     <section id="libraries">
-      <h2>Bibliotecas</h2>
-      <p><span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span></p>
-      <ul>
-        <li>Bootloader</li>
-        <li>Instalador
-          <ul>
-            <li>Linux</li>
-            <li>Windows</li>
-            <li>Mac</li>
-          </ul>
-        </li>
-        <li>Ambiente de desenvolvimento</li>
-      </ul>
+      <div class="container-center">
+        <h2>Desenvolva</h2>
+        <p><span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span></p>
+        <ul>
+          <li>Bootloader</li>
+          <li>Gravador
+            <ul>
+              <li><a href="https://github.com/SanUSB-grupo/Gravador-Linux#instalador-do-gravador-sanusb-para-linux">Linux</a></li>
+              <li><a href="https://www.microsoft.com/pt-br/store/p/sanusb-gui/9n26bfcftgkv">Windows</a></li>
+              <li>Mac</li>
+            </ul>
+          </li>
+          <li><a href="http://www.microchip.com/mplab/mplab-x-ide">Ambiente de desenvolvimento</a></li>
+        </ul>
+      </div>
+      <!-- https://www.flaticon.com/free-icon/turn-right-arrow-with-broken-line_64847 -->
     </section>
 
     <section id="learn">
       <h2>Aprenda</h2>
-      <ul>
-        <li><img src="" /> Aplicações práticas para IoT</li>
-        <li><img src="" /> IoT EaD</li>
+      <ul class="row">
+        <li class="item livro">
+          <img src="assets/img/livro.jpg" />
+          <p>Aplicações práticas de Microcontroladores utilizando Software Livre</p>
+        </li>
+        <li class="item iotead">
+          <a href="http://sanusb.tk/iotead">
+            <img src="assets/img/iotead.png" />
+            <p>IoT EaD</p>
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -275,9 +163,8 @@
 
   <footer>
     <div class="container-center">
-      <img src="assets/img/logo-grupo-sanusb.png" /> Grupo SanUSB
+      <a href="http://sanusb.org"><img src="assets/img/logo-grupo-sanusb.png" /> Grupo SanUSB </a>
     </div>
-    <div>Github</div>
   </footer>
 </body>
 </html>
