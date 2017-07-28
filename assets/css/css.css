@@ -266,6 +266,22 @@ table span.pin_right {
   line-height: 2;
 }
 
+#libraries .downloads {
+  font-size: 1.25em;
+}
+
+#libraries .downloads img {
+  width: 80px;
+  vertical-align: middle;
+}
+
+.icon {
+  padding: 2em;
+  border: 1px solid;
+  display: inline-block;
+
+  border-radius: 5px;
+}
 #research {
   padding: 5em 2em;
   background-color: white;
