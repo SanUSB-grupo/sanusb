@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link type="text/css" rel="stylesheet" href="assets/css/css.css" />
+    <meta name="theme-color" content="#27ae60">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />-->
   </head>
 
   <body>
@@ -42,13 +44,16 @@
       </div>
       <h3>Pinout</h3>
 
-      <table cellspacing="0" cellpadding="0" border="0" width="100%">
-            <tbody><tr>
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+          <thead>
+            <tr>
               <td>Pinout</td>
               <td>Physical Pin<br>
               Number</td>
               <td>Pinout</td>
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>pin_a0</td>
               <td><span class="pin_left pin_y">1</span><span class="pin_right">2</span></td>
@@ -135,10 +140,10 @@
                   Windows
                 </a>
               </li>
-              <li>
+              <!--<li>
                 <img src="assets/img/download/apple.svg">
                 Mac
-              </li>
+              </li>-->
             </ul>
           </li>
           <li>
@@ -156,8 +161,10 @@
       <h2>Aprenda</h2>
       <ul class="row">
         <li class="item livro">
-          <img src="assets/img/livro.jpg" />
-          <p>Aplicações práticas de Microcontroladores utilizando Software Livre</p>
+          <a href="https://www.dropbox.com/s/4zjiz8h6337w0uu/Apostila_MPLABX.pdf?dl=0">
+            <img src="assets/img/livro.jpg" alt="Capa do livro Aplicações práticas de Microcontroladores utilizando Software Livre. Placa SanUSB com um shield bluetooth está exposta ao centro conectada a um cabo USB" />
+            <p>Apostila baseada em "Aplicações práticas de Microcontroladores utilizando Software Livre"</p>
+          </a>
         </li>
         <li class="item iotead">
           <a href="http://sanusb.tk/iotead">
@@ -170,14 +177,16 @@
 
     <section id="research">
       <h2>Publicações</h2>
-      <p>Conheça os trabalhos publicados</p>
+      <p>Conheça alguns dos trabalhos relacionados ao <b>SanUSB</b></p>
       <ul>
         <li>
           <b>Jucá, S. C. S</b>; Carvalho, P. C. M. de; Brito, F, T.
           <a href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1806-58212009000300011">"SanUSB: software educacional para o ensino da tecnologia de microcontroladores"</a>
           Ciências & Cognição 14.3 (2009): 134-144.
         </li>
-        <li></li>
+        <li>
+          <b>Jucá, S. C. S</b>; PEREIRA, R. I. S. . Aplicações Práticas de Microcontroladores utilizando Software Livre. 1. ed. Fortaleza: IFCE, 2017. 200p.
+        </li>
       </ul>
     </section>
   </main>
@@ -187,5 +196,14 @@
       <a href="http://sanusb.org"><img src="assets/img/logo-grupo-sanusb.png" /> Grupo SanUSB </a>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+   WebFont.load({
+      google: {
+        families: ['Open Sans:300,400']
+      }
+    });
+  </script>
 </body>
 </html>

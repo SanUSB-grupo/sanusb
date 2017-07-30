@@ -15,6 +15,16 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="SanUSB.svg"
    style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10">
+ <style>
+    svg * {
+        transition: fill .1s ease-out, opacity .1s ease-out;
+    }
+    @media all and (max-width: 425px) {
+        #layer2 {
+            opacity: 0;
+        }
+    }
+  </style>
   <metadata
      id="metadata81">
     <rdf:RDF>
@@ -560,7 +570,7 @@
     </g>
     <g
        style="display:inline"
-       id="g5139-2-9-2-5"
+       id="descricao"
        transform="matrix(-0.79791381,0,0,-0.79791381,4.9561137,119.61745)">
       <text
          xml:space="preserve"
