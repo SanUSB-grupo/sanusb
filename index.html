@@ -6,8 +6,10 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/css.css" />
-    <meta name="theme-color" content="#27ae60">
+
+    <meta name="theme-color" content="#03A678">
     <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />-->
   </head>
 
@@ -20,8 +22,8 @@
       <h2 class="hide">Menu</h2>
       <ul>
         <li><a href="#overview">Hardware</a></li>
-        <li><a href="#libraries">Desenvolva</a></li>
         <li><a href="#learn">Aprenda</a></li>
+        <li><a href="#libraries">Download</a></li>
         <li><a href="#research">Trabalhos Publicados</a></li>
       </ul>
     </nav>
@@ -36,148 +38,188 @@
 
     <section id="overview">
       <div class="container-center">
-        <h2>Placa microcontrolada SanUSB</h2>
-        <p><span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span></p>
-
-        <h3 class="hide">Especificações técnicas</h3>
-        <img src="assets/img/SanUSB.svg" />
+        <h2>Placa <span class="hide-small">microcontrolada</span> SanUSB</h2>
+        <p>
+          A plaquinha SanUSB permite a programação de microcontroladores <code>PIC 18f2550</code> diretamente pela USB!
+        </p>
+        <!--
+        <p>
+          A placa microcontrolada SanUSB oferece uma interface para a programação de microcontroladores da família <code>PIC18Fxxxx</code> diretamente pela USB!
+        </p>
+        <p>Atualmente estão disponíveis duas versões: <code>PIC 18f2550</code> e <code>PIC 18f4550</code></p>
+        -->
       </div>
-      <h3>Pinout</h3>
 
-        <table cellspacing="0" cellpadding="0" border="0" width="100%">
-          <thead>
-            <tr>
-              <td>Pinout</td>
-              <td>Physical Pin<br>
-              Number</td>
-              <td>Pinout</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>pin_a0</td>
-              <td><span class="pin_left pin_y">1</span><span class="pin_right">2</span></td>
-              <td>pin_b7</td>
-            </tr>
-            <tr>
-              <td>pin_a1</td>
-              <td><span class="pin_left">3</span><span class="pin_right">4</span></td>
-              <td>pin_b6</td>
-            </tr>
-            <tr>
-              <td>pin_a2</td>
-              <td><span class="pin_left">5</span><span class="pin_right">6</span></td>
-              <td>pin_b5</td>
-            </tr>
-            <tr>
-              <td>pin_a3</td>
-              <td><span class="pin_left">7</span><span class="pin_right">8</span></td>
-              <td>pin_b4</td>
-            </tr>
-            <tr>
-              <td>pin_a4</td>
-              <td><span class="pin_left">9</span><span class="pin_right">10</span></td>
-              <td>pin_b3</td>
-            </tr>
-            <tr>
-              <td>pin_a5</td>
-              <td><span class="pin_left">11</span><span class="pin_right">12</span></td>
-              <td>pin_b2</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><span class="pin_left pin_none"></span><span class="pin_right">14</span></td>
-              <td>pin_b1</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><span class="pin_left pin_none"></span><span class="pin_right">16</span></td>
-              <td>pin_b0</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><span class="pin_left pin_none"></span><span class="pin_right pin_red">18</span></td>
-              <td>VCC +5v</td>
-            </tr>
-            <tr>
-              <td>pin_c0</td>
-              <td><span class="pin_left">19</span><span class="pin_right pin_black">20</span></td>
-              <td>GND</td>
-            </tr>
-            <tr>
-              <td>pin_c1</td>
-              <td><span class="pin_left">21</span><span class="pin_right">22</span></td>
-              <td>TX</td>
-            </tr>
-            <tr>
-              <td>pin_c2</td>
-              <td><span class="pin_left">23</span><span class="pin_right">24</span></td>
-              <td>RX</td>
-            </tr>
-          </tbody></table>
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+          <h3 class="hide">Especificações técnicas</h3>
+          <img class="image-center" src="assets/img/SanUSB.svg" />
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3>Pinos</h3>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+              <thead>
+                <tr>
+                  <td>Pinos</td>
+                  <td>Número do pino</td>
+                  <td>Pinos</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>pin_a0</td>
+                  <td><span class="pin_left pin_y">1</span><span class="pin_right">2</span></td>
+                  <td>pin_b7</td>
+                </tr>
+                <tr>
+                  <td>pin_a1</td>
+                  <td><span class="pin_left">3</span><span class="pin_right">4</span></td>
+                  <td>pin_b6</td>
+                </tr>
+                <tr>
+                  <td>pin_a2</td>
+                  <td><span class="pin_left">5</span><span class="pin_right">6</span></td>
+                  <td>pin_b5</td>
+                </tr>
+                <tr>
+                  <td>pin_a3</td>
+                  <td><span class="pin_left">7</span><span class="pin_right">8</span></td>
+                  <td>pin_b4</td>
+                </tr>
+                <tr>
+                  <td>pin_a4</td>
+                  <td><span class="pin_left">9</span><span class="pin_right">10</span></td>
+                  <td>pin_b3</td>
+                </tr>
+                <tr>
+                  <td>pin_a5</td>
+                  <td><span class="pin_left">11</span><span class="pin_right">12</span></td>
+                  <td>pin_b2</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="pin_left pin_none"></span><span class="pin_right">14</span></td>
+                  <td>pin_b1</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="pin_left pin_none"></span><span class="pin_right">16</span></td>
+                  <td>pin_b0</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="pin_left pin_none"></span><span class="pin_right pin_red">18</span></td>
+                  <td>VCC +5v</td>
+                </tr>
+                <tr>
+                  <td>pin_c0</td>
+                  <td><span class="pin_left">19</span><span class="pin_right pin_black">20</span></td>
+                  <td>GND</td>
+                </tr>
+                <tr>
+                  <td>pin_c1</td>
+                  <td><span class="pin_left">21</span><span class="pin_right">22</span></td>
+                  <td>TX</td>
+                </tr>
+                <tr>
+                  <td>pin_c2</td>
+                  <td><span class="pin_left">23</span><span class="pin_right">24</span></td>
+                  <td>RX</td>
+                </tr>
+              </tbody></table>
+        </div>
+      </div>    
     </section>
 
-    <section id="libraries">
-      <div class="container-center">
-        <h2>Desenvolva</h2>
-        <p><span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span> <span>___________________</span> <span>_________________</span> <span>_______</span> <span>______________</span> <span>_________________</span></p>
 
-        <ul class="downloads">
-          <li>
-            Bootloader
+    <section id="learn">
+        <h2>Aprenda</h2>
+
+        <p>Dê os seus primeiros passos na ferramenta com um material selecionado para o aprendizado de microcontroladores, abordado desde a montagem da placa até o desenvolvimento de aplicações IoT.</p>
+
+        <ul class="row">
+          <li class="col-xs-12 col-sm-6 item livro">
+            <a href="http://sanusb.org/arquivos/Apostila_MPLABX.pdf">
+              <img src="assets/img/apostila.png" aria-hidden="true" alt="Capa da apostila Aplicações Práticas de Eletrônica e Microcontroladores em Sistemas Computacionais" />
+              <p>Apostila "Aplicações Práticas de Eletrônica e Microcontroladores em Sistemas Computacionais"</p>
+            </a>
           </li>
-          <li>Gravador
-            <ul>
-              <li>
-                <a href="https://github.com/SanUSB-grupo/Gravador-Linux#instalador-do-gravador-sanusb-para-linux">
-                  <img src="assets/img/download/linux.svg">
-                  Linux
-                </a>
-              </li>
-              <li>
-                <a href="https://www.microsoft.com/pt-br/store/p/sanusb-gui/9n26bfcftgkv">
-                  <img src="assets/img/download/windows.svg">
-                  Windows
-                </a>
-              </li>
-              <!--<li>
-                <img src="assets/img/download/apple.svg">
-                Mac
-              </li>-->
-            </ul>
-          </li>
-          <li>
-            <a href="http://www.microchip.com/mplab/mplab-x-ide">
-              <img src="assets/img/download/browser.svg">
-              Ambiente de desenvolvimento
+          <li class="col-xs-12 col-sm-6 item iotead">
+            <a href="http://ifce.sanusb.org/iotead/">
+              <img src="assets/img/iotead.png" aria-hidden="true" alt="Página inicial do IoT EaD" />
+              <p>IoT EaD</p>
             </a>
           </li>
         </ul>
+      </section>
+
+    <section id="libraries">
+      <div class="container-center">
+        <h2>Material para download</h2>
+
+        <p>Links de acesso rápido aos materiais relacionados ao desenvolvimento de placas e programas</p>
+
+        <div>
+          <h3>Bootloader</h3>
+          <a href="http://sanusb.org/tools/Gerenciador.hex" class="button"> Gerenciador.hex </a>
+        </div>
+
+        <div>
+          <h3>Gravador</h3>
+          <ul>
+            <li>
+              <a class="button" href="https://github.com/SanUSB-grupo/Gravador-Linux#instalador-do-gravador-sanusb-para-linux">
+                <img src="assets/img/download/linux.svg">
+                <span>Linux</span>
+              </a>
+            </li>
+            <li>
+              <a class="button" href="https://github.com/SanUSB-grupo/Gravador-RPI#instalador-do-gravador-sanusb-para-raspberry-pi">
+                <img src="assets/img/download/raspberry-pi.svg">
+                <span>Raspberry Pi</span>
+              </a>
+            </li>
+            <li>
+              <a class="button" href="https://github.com/SanUSB-grupo/Gravador-Windows#instalador-do-gravador-sanusb-para-windows">
+                <img aria-hidden="true" src="assets/img/download/windows.svg">
+                Windows
+              </a>
+            </li>
+            <li>
+              <a class="button" href="https://github.com/SanUSB-grupo/Gravador-macOS#instalador-do-gravador-sanusb-para-macos">
+                <img aria-hidden="true" src="assets/img/download/apple.svg">
+                Mac
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Ambiente de desenvolvimento</h3>
+          <a href="http://www.microchip.com/mplab/mplab-x-ide" class="button">
+            <img src="assets/img/download/browser.svg">
+            MPLAB-X IDE
+          </a>
+        </div>
+
+        <div>
+          <h3>Esquemático do circuito impresso</h3>
+          <h4><code>SanUSB PIC 18F2550</code></h4>
+          <a href="material/PCB_SanUSB_2550_cobre_normal.pdf" class="button">Trilhas de cobre</a>
+          <a href="material/PCB_SanUSB_2550_silk_espelho.pdf" class="button">Silk espelho</a>
+          <h4><code>SanUSB PIC 18F4550</code></h4>
+          <a href="material/PCB_SanUSB_4550_cobre_normal.pdf" class="button">Trilhas de cobre</a>
+          <a href="material/PCB_SanUSB_4550_silk_espelho.pdf" class="button">Silk espelho</a>
+        </div>
       </div>
       <!-- https://www.flaticon.com/free-icon/turn-right-arrow-with-broken-line_64847 -->
     </section>
 
-    <section id="learn">
-      <h2>Aprenda</h2>
-      <ul class="row">
-        <li class="item livro">
-          <a href="https://www.dropbox.com/s/4zjiz8h6337w0uu/Apostila_MPLABX.pdf?dl=0">
-            <img src="assets/img/livro.jpg" alt="Capa do livro Aplicações práticas de Microcontroladores utilizando Software Livre. Placa SanUSB com um shield bluetooth está exposta ao centro conectada a um cabo USB" />
-            <p>Apostila baseada em "Aplicações práticas de Microcontroladores utilizando Software Livre"</p>
-          </a>
-        </li>
-        <li class="item iotead">
-          <a href="http://sanusb.org/iotead">
-            <img src="assets/img/iotead.png" />
-            <p>IoT EaD</p>
-          </a>
-        </li>
-      </ul>
-    </section>
 
     <section id="research">
       <h2>Publicações</h2>
-      <p>Conheça alguns dos trabalhos relacionados ao <b>SanUSB</b></p>
+      <p>Conheça alguns dos trabalhos relacionados ao <b>SanUSB</b>:</p>
       <ul>
         <li>
           <b>Jucá, S. C. S</b>; Carvalho, P. C. M. de; Brito, F, T.
@@ -188,6 +230,25 @@
           <b>Jucá, S. C. S</b>; PEREIRA, R. I. S. . Aplicações Práticas de Microcontroladores utilizando Software Livre. 1. ed. Fortaleza: IFCE, 2017. 200p.
         </li>
       </ul>
+
+      <h3>Cite-nos</h3>
+
+<p>Para citar em trabalhos acadêmicos a placa ou as bibliotecas do SanUSB, você pode utilizar o seguinte <code>BibTex</code>:</p>
+<pre><code>@article{JUCA2009,
+  title = {{SanUSB: software educacional para o ensino da tecnologia de microcontroladores}},
+  journal = {{Ci\~A\textordfemeninencias & Cogni\~A\S\~A\poundso}},
+  author={Juc\~A!`, Sandro C\~A\copyrightsar Silveira AND Carvalho, Paulo Cesar Marques de AND Brito, F\~A!`bio Timb\~A\textthreesuperior},
+  ISSN = {1806-5821},
+  language = {pt},
+  URL = {http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1806-58212009000300011&nrm=iso},
+  volume = {14},
+  year = {2009},
+  month = {11},
+  pages = {134 - 144},
+  publisher = {scielopepsic},
+}
+</code></pre>
+
     </section>
   </main>
 
